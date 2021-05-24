@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  text-decoration: unset;
+}
+
+ul {
+  margin-left: 1.5rem;
+  list-style: none;
+}
+
+.register {
+  margin-bottom: 1em;
+}
+
+.regBTN {
+  color: white;
+}
+.logBTN {
+  color: white;
+}
+
+button,
+input[type="submit"] {
+  border: none;
+  background: none;
+  color: unset;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 1em, 0;
+  margin-top: 1em;
+  margin-left: 1rem;
+}
+
+/* general */
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.login {
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.home {
+  color: black;
+}
+
+/* Header */
+
+#header {
+  height: 50px;
+  background-color: #38a4ac;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header .title {
+  margin: 0;
+  color: white;
+  padding: 0 1rem;
+}
+
+#header .auth-op {
+  display: flex;
+  height: 100%;
+}
+
+#header .auth-op button {
+  padding: 0 1rem;
+  background-color: #666667;
+  font-size: 1.1rem;
+}
+
+#header .auth-op button:hover {
+  background-color: #66ab8d;
+}
+
+input[type="submit"] {
+  color: black;
+  border: 2px solid #666667;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: #66ab8d;
+}
+
+/* Forms */
+
+.form label,
+.form input {
+  display: block;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.form input {
+  background-color: rgba(235, 233, 233, 0.689);
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"] {
+  width: 100%;
+  padding: 0.3rem;
+  font-size: 1.1rem;
+  border: 2px solid #666667;
+  border-radius: 5px;
+}
+
+/* Error Notice */
+.error-notice {
+  border: 1px solid #b13406;
+  background-color: rgba(248, 160, 160, 0.797);
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.error-notice button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #df4343;
+  color: #ffffff;
+}
+
+/* Media Qureies */
+
+@media screen and (max-width: 550px) {
+  #header .title {
+    font-size: 1.2rem;
+  }
+
+  #header .auth-op button {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+  }
+}
